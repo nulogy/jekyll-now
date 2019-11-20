@@ -15,9 +15,31 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+@font-face {
+  font-family: blender;
+  src: url('/til/assets/fonts/blender-book-webfont.woff2') format('woff2'),
+        url('/til/assets/fonts/blender-book-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: blender-bold;
+  src: url('/til/assets/fonts/blender-bold-webfont.woff2') format('woff2'),
+        url('/til/assets/fonts/blender-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: blender-medium;
+  src: url('/til/assets/fonts/blender-medium-webfont.woff2') format('woff2'),
+        url('/til/assets/fonts/blender-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+$rubik: 'Rubik', sans-serif;
+$blender: blender;
 
 // Mobile breakpoints
 @mixin mobile {
