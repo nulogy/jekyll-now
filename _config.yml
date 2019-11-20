@@ -6,7 +6,7 @@
 name: Nulogy Engineering TIL
 
 # Short bio or description (displayed in the header)
-description: TIL is a Nulogy microblog for sharing web development tips, tricks, and tidbits. From Ruby on Rails to AngularJS, our Engineering department blogs on topics across the stack to share in our collective success and improve our understanding of all things technology.
+description: A microblog for web development
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://engineering.nulogy.com/assets/images/logo.svg

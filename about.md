@@ -4,12 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+TIL is a Nulogy microblog for sharing web development tips, tricks, and tidbits. From Ruby on Rails to AngularJS, our Engineering department blogs on topics across the stack to share in our collective success and improve our understanding of all things technology.
