@@ -9,6 +9,10 @@ layout: default
     {{ content }}
   </div>
 
+  {% if page.author %}
+    Written by: {{page.author}}
+  {% endif %}
+
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
