@@ -1,6 +1,12 @@
 # Nulogy Engineering TIL Site
 TIL is a public Nulogy microblog for sharing web development tips, tricks, and tidbits. From Ruby on Rails to ReactJS, our Engineering department blogs on topics across the stack to share in our collective success and improve our understanding of all things technology.
 
+# IMPORTANT NOTICE
+
+```diff
+- NOTE THAT ALL CONTENT IN THIS REPOSITORY IS PUBLIC. DO NOT PUSH ANY SENSITIVE INFORMATION THAT SHOULD NOT BE ON A PUBLIC, UNRESTRICTED WEBSITE.
+```
+
 # Adding a post
 Simply make a new markdown file in `_posts` folder, follow the recipe established by previous posts. Commit and push to master and you should see the changes at https://nulogy.github.io/til/
 
