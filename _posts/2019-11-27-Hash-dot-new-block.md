@@ -3,6 +3,7 @@ layout: post
 title: "Hash.new with a block"
 author: podrezo
 date: 2019-11-27
+excerpt: "I was recently following a great blog article on memoization in Ruby by Justin Weiss and it made perfect sense until I got to the last part which was most relevant for my purposes - \"And what about parameters?\". Here, the article uses a pattern of memoization that involves a `Hash.new` that is supplied a block. [Continued...]"
 ---
 
 I was recently following a [great blog article on memoization in Ruby by Justin Weiss](https://www.justinweiss.com/articles/4-simple-memoization-patterns-in-ruby-and-one-gem/) and it made perfect sense until I got to the last part which was most relevant for my purposes - "And what about parameters?". Here, the article uses a pattern of memoization that involves a `Hash.new` that is supplied a block. According to the Ruby docs this does the following:
