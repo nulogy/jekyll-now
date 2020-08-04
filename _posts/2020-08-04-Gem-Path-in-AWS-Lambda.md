@@ -2,7 +2,7 @@
 layout: post
 title: "Ruby code with gems on AWS Lambda"
 author: podrezo
-date: 2019-12-20
+date: 2020-08-04
 excerpt: "If you want to use ruby with AWS's lambdas and that ruby code relies on gems then you'll have to jump through a small hoop to get it running. This article explains how. [Continued...]"
 ---
 
