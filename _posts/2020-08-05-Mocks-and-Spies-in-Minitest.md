@@ -17,7 +17,7 @@ class MyHelperClass
     raise "Fail the test if the real thing is called"
   end
 
-  def self.upcase_static(value)
+  def self.upcase_class_method(value)
     # value.upcase
     raise "Fail the test if the real thing is called"
   end
@@ -29,13 +29,13 @@ class MyClassUnderTest
     helper_class.upcase_instance(value)
   end
 
-  def use_upcase_static(value)
-    MyHelperClass.upcase_static(value)
+  def use_upcase_class_method(value)
+    MyHelperClass.upcase_class_method(value)
   end
 end
 ```
 
-Note that if the real helper class's methods are called the test will fail to illustrate that we're doing the correct thing. In your test spec file you wil need to bring in the necessary `require`s for minitest:
+Note that if the real helper class's methods are called the test will fail to illustrate that we're doing the correct thing. In your test file you wil need to bring in the necessary `require`s for minitest:
 
 ```ruby
 require "minitest/autorun"
@@ -67,11 +67,11 @@ assert_called_on_instance_of(MyHelperClass, :upcase_instance, ["FoUrTyTwO"], ret
 end
 ```
 
-And for a static method you write
+And for a class method you write
 
 ```ruby
-assert_called(MyHelperClass, :upcase_static, ["FoUrTyTwO"], returns: "FOURTYTWO") do
-  MyClassUnderTest.new.use_upcase_static("FoUrTyTwO")
+assert_called(MyHelperClass, :upcase_class_method, ["FoUrTyTwO"], returns: "FOURTYTWO") do
+  MyClassUnderTest.new.use_upcase_class_method("FoUrTyTwO")
 end
 ```
 
