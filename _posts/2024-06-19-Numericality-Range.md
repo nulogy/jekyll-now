@@ -13,25 +13,27 @@ you can use `in` with a range.
 
 **Before**
 
-```Ruby
+```ruby
   validates :setting_reuse, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 12 }
 ```
 
 **After**
 
-```Ruby
+```ruby
   validates :setting_reuse, numericality: { in: 0..12 }
 ```
 
 You get all the expressiveness that a range provides.
 Here are more examples each showing before and after:
 
-```Ruby
+```ruby
   validates :setting_reuse, numericality: { greater_than_or_equal_to: 2 }
   validates :setting_reuse, numericality: { in: 2... }
 ```
 
-```Ruby
+----
+
+```ruby
   validates :setting_reuse, numericality: { less_than: 12 }
   validates :setting_reuse, numericality: { in: ...12 }
 ```
